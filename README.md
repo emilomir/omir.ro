@@ -1,2 +1,2 @@
 # omir.ro
-Created with CodeSandbox
+First version of omir.ro with just a redirect to instagram
