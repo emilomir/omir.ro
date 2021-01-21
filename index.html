@@ -10,32 +10,78 @@
     <style>
       body {
         font-family: 'Roboto', sans-serif;
-        background: url(https://lh3.googleusercontent.com/pw/ACtC-3f2Yxn1HV61Uw1YA_R9WG1ayfuAJ2StboFdGCO5UJ-B7qa7XSmnQ6TI3D5UrtoaIrqAL3GEf7dkCF-g45dcWT2K8RIZIaxFW2cV-_1JyDfOb6XRM0fwjPswN_ImsSqrPtViC0usTC7n8dnM326VM3D83A=w1251-h937-no?authuser=0);
         display: flex;
-        flex-direction: column;
         justify-content: center;
         align-items: center;
         height: 100vh;
-        color: white;
+        width: 100vw;
+        background: #212121;
+        margin:0;
       }
 
       h1 {
         font-size: 3rem;
+        text-align: center;
       }
 
       h2 {
         font-size: 2rem;
+        text-align: center;
       }
 
       a {
-        color: #C13584;
-        font-size: 1.3rem;
+        color: white;
+      }
+
+      .wrapper {
+         background: url(https://lh3.googleusercontent.com/pw/ACtC-3f2Yxn1HV61Uw1YA_R9WG1ayfuAJ2StboFdGCO5UJ-B7qa7XSmnQ6TI3D5UrtoaIrqAL3GEf7dkCF-g45dcWT2K8RIZIaxFW2cV-_1JyDfOb6XRM0fwjPswN_ImsSqrPtViC0usTC7n8dnM326VM3D83A=w1251-h937-no?authuser=0);
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        border-radius: 10px;
+      }
+
+      .outer {
+        position: relative;
+        width: 70vw;
+      }
+      .outer:before {
+        display: block;
+        content: "";
+        width: 100%;
+        padding-top: calc((379 / 506) * 100%);
+      }
+      .outer > .inner {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .card-1 {
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+      }
+
+      .card-1:hover {
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
       }
     </style>
   </head>
   <body>
-    <h1>Emil Omir</h1>
-    <h2>This website is a work in progress</h2>
-    <p>Meanwhile visit <a href="https://www.instagram.com/emilomir/">my gram</a> to see my photography.</p>
+    <div class="wrapper outer card-1">
+      <div class="inner">
+        <h1>Emil Omir</h1>
+        <h2>This website is a work in progress</h2>
+        <p>Meanwhile visit <a href="https://www.instagram.com/emilomir/">my instagram</a> to see more photos.</p>
+      </div>
+    </div>
   </body>
 </html>
