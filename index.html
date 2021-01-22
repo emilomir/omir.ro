@@ -33,6 +33,10 @@
         color: white;
       }
 
+      p {
+        text-align: center;
+      }
+
       .wrapper {
          background: url(https://lh3.googleusercontent.com/pw/ACtC-3f2Yxn1HV61Uw1YA_R9WG1ayfuAJ2StboFdGCO5UJ-B7qa7XSmnQ6TI3D5UrtoaIrqAL3GEf7dkCF-g45dcWT2K8RIZIaxFW2cV-_1JyDfOb6XRM0fwjPswN_ImsSqrPtViC0usTC7n8dnM326VM3D83A=w1251-h937-no?authuser=0);
         background-size: cover;
@@ -46,7 +50,7 @@
 
       .outer {
         position: relative;
-        width: 70vw;
+        width: 60vw;
       }
       .outer:before {
         display: block;
@@ -73,6 +77,20 @@
       .card-1:hover {
         box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
       }
+
+      @media only screen and (max-width: 900px) {
+        .outer {
+         width: 80vw;
+          }
+          
+        h1 {
+          font-size: 1.5rem;
+        }
+
+        h2 {
+          font-size: 1rem;
+        }
+      }
     </style>
   </head>
   <body>
@@ -80,7 +98,7 @@
       <div class="inner">
         <h1>Emil Omir</h1>
         <h2>This website is a work in progress</h2>
-        <p>Meanwhile visit <a href="https://www.instagram.com/emilomir/">my instagram</a> to see more photos.</p>
+        <p>Meanwhile, visit <a href="https://www.instagram.com/emilomir/">my instagram</a> to see more photos.</p>
       </div>
     </div>
   </body>
